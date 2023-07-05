@@ -104,8 +104,8 @@ class CameraViewController: UIViewController {
    return;
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
-//             setupCaptureSession()
-//             return;
+            setupCaptureSession()
+            return;
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { granted in
                 if granted {
